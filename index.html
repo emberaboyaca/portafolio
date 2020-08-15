@@ -6,41 +6,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-.carousel-inner{
- height: 530px;
-     width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-    body { background-color: #d1d0d0; 
-}
-<style type="text/css">
-      p {
-    text-align: justify;
+  .carousel-control-prev, .carousel-control-next
+  {
+  
+    height: auto;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
   }
+.carousel
+{
+  position: relative;
+  height: auto;
+    width: 70vw;
+} 
+.carousel-control-prev-icon,.carousel-control-next-icon
+{
+  height: 50px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+body { background-color: #646464; 
+}
+.container-fluid{
+    justify-content: center;
+}
+
 </style> 
   
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container-responsive">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Portafolio</a>
+          <a class="navbar-brand" href="index.html">Inicio</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a href="perfil.html">Perfil</a></li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Proyectos <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="casaloma.html">Territorializacion Embera en Puerto Boyaca
               </a></li>
-              <li><a href="#">Guaviare</a></li>
-              <li><a href="#">Playa Guio ecoturismo y esperanza</a></li>
-              <li><a href="#">Comunicacion e incidencia politica</a></li>
+              <li><a href="#">Guaviare selva y colonización</a></li>
+              <li><a href="#">Playa Güío ecoturismo y esperanza</a></li>
+              <li><a href="#">Comunicacion e incidencia política</a></li>
               <li><a href="#">Gobernanza del agua en Bogotá</a></li>
-              <li><a href="#">Guaviare</a></li>
+
             </ul>
           </li>
-          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
 
       </div>
@@ -55,12 +68,13 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/img_casaloma.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="images/img_1.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
@@ -69,6 +83,9 @@
     
       <div class="item">
         <img src="images/img_3.jpg" alt="New york" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="images/img_4.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
 
