@@ -4,59 +4,61 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-  
-  html {
-    font-size: 26px;
-} 
-  body { background-color: #646464; 
-}
-.container{ height: 400px;
-     width: 800px;margin-left: auto;
-  margin-right: auto;};
-
-  </style>
-  <style type="text/css">
-    p {
-	text-align: justify;
-  color: #f0f0f0;
-  font-size: 120%;
-   }
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/bootstrap-grid.css">
+   <link rel="stylesheet" href="css/estilos.css">
+   <style>
+ 
+     body { background-color: #646464; 
+     }
+     .navbar{
+       background-color: #646464; 
+ 
+     }
+     p{
+       color: rgb(224, 224, 224);
+    text-align: justify;
+     }
+ 
+     </style> 
 
     
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Inicio</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="nav-item active"><a href="perfil.html">Perfil</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Proyectos <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="embera.html">Territorializacion Embera en Puerto Boyaca
-              </a></li>
-              <li><a href="pto.html">Capital antisubversiva de Colombia</a></li>
-              <li><a href="guaviare.html">Guaviare</a></li>
-              <li><a href="#">Playa Guio ecoturismo y esperanza</a></li>
-              <li><a href="#">Comunicacion e incidencia politica</a></li>
-              <li><a href="#">Gobernanza del agua en Bogotá</a></li>
-              <li><a href="#">Guaviare</a></li>
-            </ul>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
           </li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Proyectos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="embera.html">Territorialización Embera en Puerto Boyacá</a>
+              <a class="dropdown-item" href="pto.html">Capital antisubversiva de Colombia</a>
+              <a class="dropdown-item" href="gua.html">Guaviare selva y colonización</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="videos.html">Vídeos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contanco.html">Contacto</a>
+          </li>
         </ul>
 
       </div>
     </nav>
+
       
 
     <div class="container">
@@ -65,6 +67,13 @@
       <p> Antropólogo de la Pontificia Universidad Javeriana (Bogotá, Colombia) y candidato a magíster en Geografía de la Universidad Nacional de Colombia. Su experiencia gira en torno de los escenarios y las redes que se tejen alrededor de la inclusión socioeconómica y la participación comunitaria en comunidades y organizaciones de la ciudad de Bogotá, departamento de Boyacá, Cauca y departamento del Guaviare. Tiene experiencia en producción de piezas audiovisuales, exposiciones de fotografía y creación de contenidos gráficos, así como el desarrollo de una metodología de formación para impartir talleres de liderazgo comunitario para crear, interpretar e incidir contextos sociales a través del arte y el audiovisual.
       </p>
     </div>
-    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('.dropdown-toggle').dropdown();
+      });
+ </script>
   </body>
 </html>
