@@ -1,142 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Portafolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-  .carousel-control-prev, .carousel-control-next
-  {
-  
-    height: auto;
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0);
-  }
-.carousel
-{
-  position: relative;
-  left: auto;
-  right: auto;
-  height: auto;
-    width: 60vw;
-} 
-.carousel-control-prev-icon,.carousel-control-next-icon
-{
-  height: 50px;
-    width: 60px;
-    background-color: rgba(0, 0, 0, 0.637);
-}
-body { background-color: #646464; 
-}
-.container-fluid{
-    justify-content: center;
-}
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
 
-</style> 
+    body { background-color: #646464; 
+    }
+    h2{
+ color: rgb(231, 231, 231);
+    }
+    h6{
+      text-align: justify;
+      color: rgb(224, 224, 224);
+      line-height: unset;
+    }
+    h5{
+      text-align: justify;
+      color:rgb(231, 231, 231)
+    }
   
-  </head>
+
+
+    </style> 
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-responsive">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Inicio</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="nav-item"><a href="perfil.html">Perfil</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Proyectos <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="embera.html">Territorializacion Embera en Puerto Boyaca
-              </a></li>
-              <li><a href="pto.html">Capital antisubversiva de Colombia</a></li>
-              <li><a href="#">Guaviare selva y colonización</a></li>
-                    <li><a href="#">Playa Güío ecoturismo y esperanza</a></li>
-              <li><a href="#">Playa Güío ecoturismo y esperanza</a></li>
-              <li><a href="#">Comunicacion e incidencia política</a></li>
-              <li><a href="#">Gobernanza del agua en Bogotá</a></li>
+    <header>
+
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand active" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Proyectos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="embera.html">Territorialización Embera en Puerto Boyacá</a>
+                  <a class="dropdown-item" href="pto.html">Capital antisubversiva de Colombia</a>
+                  <a class="dropdown-item" href="guaviare.html">Guaviare selva y colonización</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="videos.html">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contanto.html">Contacto</a>
+              </li>
 
             </ul>
-          </li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
 
-      </div>
-    </nav>
-      
+          </div>
+        </nav>
+       
 
-    <div class="container">
- 
-      <section id="contacto">
+      </header>
+        </head>
+                         
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2>Contacteme</h2>
-              <hr class="star-primary">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-              <form name="sentMessage" id="contactForm" novalidate>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor, ingrese su name.">
-                    <p class="help-block text-danger"></p>
-                  </div>
+ 
+          <section id="contacto">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+           
+          <div class="col-12 ">
+            <br>  
+            <h2 class="site-section-heading text-center">Contacto</h2>
+            <h6 class="site-section-heading text-center">Juan Manuel Díaz</h6>
+                  
+    <br>   
+    <form action="https://formspree.io/xqkyokwp" method="POST">
+      <input type="text" name="name">
+      <input type="email" name="_replyto">
+      <input type="submit" value="Send">
+    </form>  
+              </div>
                 </div>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Email</label>
-                    <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor, ingrese su email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
+                 </div>
                 </div>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Número de teléfono</label>
-                    <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone" required data-validation-required-message="Por favor, ingrese su número de teléfono.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                    <label>Mensaje</label>
-                    <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor, ingrese un mensaje."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <br>
-                <div id="success"></div>
-                <div class="row">
-                  <div class="form-group col-xs-12">
-                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <script>
-      (function() {
-          'use strict';
-          window.addEventListener('load', function() {
-              var forms = document.getElementsByClassName('needs-validation');
-              var validation = Array.prototype.filter.call(forms, function(form) {
-                  form.addEventListener('submit', function(event) {
-                      if (form.checkValidity() === false) {
-                          event.preventDefault();
-                          event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                  }, false);
-              });
-          }, false);
-      })();
-  </script
+              </div>
+
+
+
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/bootstrap.bundle.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
   </body>
 </html>
+
