@@ -23,7 +23,32 @@
       text-align: justify;
       color:rgb(231, 231, 231)
     }
+  form{
+    max-width: 450px;
+    margin: 0 auto 50px;
+  }
+  label{
+    display: block;
+    margin bottom: 20px;
+  }
+  span{
+    display: block;
+  }
+
+  input, textarea {
+    border: 3px solid #202020;
+    width: 100%;
+    padding: 7px;
+    
+}
+textarea{
+  padding: 0.5em;
+}
+.enviar-wrap{
+  text-align: right;
+  width: 40%;
   
+}
 
 
     </style> 
@@ -77,13 +102,22 @@
           <div class="col-12 ">
             <br>  
             <h2 class="site-section-heading text-center">Contacto</h2>
-            <h6 class="site-section-heading text-center">Juan Manuel Díaz</h6>
+            <h6 class="site-section-heading text-center">Para mayor información escribe un mensaje</h6>
                   
-    <br>   
+     
     <form action="https://formspree.io/xqkyokwp" method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
+      <div class="info-group">
+      <label><span>Tú nombre</span>
+      <input type="text" name="name"></label>
+      <label><span>Tú e-mail</span>
+      <input type="email" name="_replyto"></label>
+    </div>
+    
+      <label><span>Asunto</span>
+      <textarea name="Mensaje" id="" cols="30" rows="10"></textarea></label>
+      <div class="enviar-wrap">
+      <input type="submit" value="Enviar">
+      </div>
     </form>  
               </div>
                 </div>
